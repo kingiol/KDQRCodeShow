@@ -2,6 +2,8 @@
 
 support QRCode like wechat(微信)
 
+![screenshot](./screenshot/screenshot.jpg)
+
 ## Requirements
 
 - iOS 8.0+
