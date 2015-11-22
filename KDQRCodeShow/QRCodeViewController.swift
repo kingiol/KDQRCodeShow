@@ -14,6 +14,8 @@ class QRCodeViewController: UIViewController {
     
     var session: AVCaptureSession!
     
+    let scanSize = CGSize(width: 200.0, height: 200.0)
+    
     var contentW: CGFloat = 0.0
     var contentH: CGFloat = 0.0
 
@@ -109,7 +111,6 @@ extension QRCodeViewController {
                 metaDataOutput.setMetadataObjectsDelegate(self, queue: dispatchQueue)
                 metaDataOutput.metadataObjectTypes = [AVMetadataObjectTypeQRCode]
                 
-                let scanSize = CGSize(width: 200, height: 200)
                 var scanRect = CGRect(x: (contentW-scanSize.width)/2.0, y: (contentH-scanSize.height)/2.0, width: scanSize.width, height: scanSize.height)
                 
                 scanRect = CGRect(x: scanRect.origin.y/contentH, y: scanRect.origin.x/contentW, width: scanRect.size.height/contentH, height: scanRect.size.width/contentW)
@@ -128,7 +129,18 @@ extension QRCodeViewController {
     }
     
     func setUpQRMask() {
+        let centerRect = CGRect(x: (contentW-scanSize.width)/2.0, y: (contentH-scanSize.height)/2.0, width: scanSize.width, height: scanSize.height)
         
+        let path = UIBezierPath(rect: view.bounds)
+        let centerPath = UIBezierPath(rect: centerRect)
+        path.appendPath(centerPath)
+        path.usesEvenOddFillRule = true
+        
+        let fillLayer = CAShapeLayer()
+        fillLayer.path = path.CGPath
+        fillLayer.fillRule = kCAFillRuleEvenOdd
+        fillLayer.fillColor = UIColor.blackColor().colorWithAlphaComponent(0.3).CGColor
+        view.layer.addSublayer(fillLayer)
     }
     
     func checkCameraAvaliable() -> Bool {
