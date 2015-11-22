@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		629559801C01AA6D0004453C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6295597F1C01AA6D0004453C /* AppDelegate.swift */; };
+		629559821C01AA6D0004453C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629559811C01AA6D0004453C /* ViewController.swift */; };
+		629559851C01AA6D0004453C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629559831C01AA6D0004453C /* Main.storyboard */; };
+		629559871C01AA6D0004453C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629559861C01AA6D0004453C /* Assets.xcassets */; };
+		6295598A1C01AA6D0004453C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629559881C01AA6D0004453C /* LaunchScreen.storyboard */; };
+		629559921C01AB960004453C /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629559911C01AB960004453C /* QRCodeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6295597C1C01AA6D0004453C /* KDQRCodeShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDQRCodeShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6295597F1C01AA6D0004453C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		629559811C01AA6D0004453C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		629559841C01AA6D0004453C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		629559861C01AA6D0004453C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		629559891C01AA6D0004453C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6295598B1C01AA6D0004453C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629559911C01AB960004453C /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		629559791C01AA6D0004453C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		629559731C01AA6D0004453C = {
+			isa = PBXGroup;
+			children = (
+				6295597E1C01AA6D0004453C /* KDQRCodeShow */,
+				6295597D1C01AA6D0004453C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6295597D1C01AA6D0004453C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6295597C1C01AA6D0004453C /* KDQRCodeShow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6295597E1C01AA6D0004453C /* KDQRCodeShow */ = {
+			isa = PBXGroup;
+			children = (
+				6295597F1C01AA6D0004453C /* AppDelegate.swift */,
+				629559811C01AA6D0004453C /* ViewController.swift */,
+				629559911C01AB960004453C /* QRCodeViewController.swift */,
+				629559831C01AA6D0004453C /* Main.storyboard */,
+				629559861C01AA6D0004453C /* Assets.xcassets */,
+				629559881C01AA6D0004453C /* LaunchScreen.storyboard */,
+				6295598B1C01AA6D0004453C /* Info.plist */,
+			);
+			path = KDQRCodeShow;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6295597B1C01AA6D0004453C /* KDQRCodeShow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6295598E1C01AA6D0004453C /* Build configuration list for PBXNativeTarget "KDQRCodeShow" */;
+			buildPhases = (
+				629559781C01AA6D0004453C /* Sources */,
+				629559791C01AA6D0004453C /* Frameworks */,
+				6295597A1C01AA6D0004453C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KDQRCodeShow;
+			productName = KDQRCodeShow;
+			productReference = 6295597C1C01AA6D0004453C /* KDQRCodeShow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		629559741C01AA6D0004453C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Kingiol;
+				TargetAttributes = {
+					6295597B1C01AA6D0004453C = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 629559771C01AA6D0004453C /* Build configuration list for PBXProject "KDQRCodeShow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 629559731C01AA6D0004453C;
+			productRefGroup = 6295597D1C01AA6D0004453C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6295597B1C01AA6D0004453C /* KDQRCodeShow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6295597A1C01AA6D0004453C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6295598A1C01AA6D0004453C /* LaunchScreen.storyboard in Resources */,
+				629559871C01AA6D0004453C /* Assets.xcassets in Resources */,
+				629559851C01AA6D0004453C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		629559781C01AA6D0004453C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629559921C01AB960004453C /* QRCodeViewController.swift in Sources */,
+				629559821C01AA6D0004453C /* ViewController.swift in Sources */,
+				629559801C01AA6D0004453C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		629559831C01AA6D0004453C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				629559841C01AA6D0004453C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		629559881C01AA6D0004453C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				629559891C01AA6D0004453C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6295598C1C01AA6D0004453C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6295598D1C01AA6D0004453C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6295598F1C01AA6D0004453C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KDQRCodeShow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingiol.KDQRCodeShow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		629559901C01AA6D0004453C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KDQRCodeShow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingiol.KDQRCodeShow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		629559771C01AA6D0004453C /* Build configuration list for PBXProject "KDQRCodeShow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6295598C1C01AA6D0004453C /* Debug */,
+				6295598D1C01AA6D0004453C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6295598E1C01AA6D0004453C /* Build configuration list for PBXNativeTarget "KDQRCodeShow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6295598F1C01AA6D0004453C /* Debug */,
+				629559901C01AA6D0004453C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 629559741C01AA6D0004453C /* Project object */;
+}
