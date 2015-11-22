@@ -12,7 +12,7 @@ import AVFoundation
 
 class QRCodeViewController: UIViewController {
     
-    var session: AVCaptureSession!
+    var session: AVCaptureSession?
     
     let scanSize = CGSize(width: 200.0, height: 200.0)
     
@@ -35,12 +35,12 @@ class QRCodeViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        session.startRunning()
+        session?.startRunning()
     }
     
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
-        session.stopRunning()
+        session?.stopRunning()
     }
 
     override func didReceiveMemoryWarning() {
@@ -73,7 +73,7 @@ extension QRCodeViewController: AVCaptureMetadataOutputObjectsDelegate {
         }
         
         if stringValue.characters.count > 0 {
-            session.stopRunning()
+            session?.stopRunning()
             print("QRCode: \(stringValue)")
         }
     }
@@ -97,14 +97,14 @@ extension QRCodeViewController {
                 }
                 
                 session = AVCaptureSession()
-                session.sessionPreset = AVCaptureSessionPresetHigh
-                if session.canAddInput(input) {
-                    session.addInput(input)
+                session!.sessionPreset = AVCaptureSessionPresetHigh
+                if session!.canAddInput(input) {
+                    session!.addInput(input)
                 }
                 
                 let metaDataOutput = AVCaptureMetadataOutput()
-                if session.canAddOutput(metaDataOutput) {
-                    session.addOutput(metaDataOutput)
+                if session!.canAddOutput(metaDataOutput) {
+                    session!.addOutput(metaDataOutput)
                 }
                 
                 let dispatchQueue = dispatch_queue_create("com.kingiol.QRLockQueue", nil)
@@ -158,14 +158,14 @@ extension QRCodeViewController {
             switch UIDevice.currentDevice().systemVersion.compare("8.0.0", options: NSStringCompareOptions.NumericSearch) {
             case .OrderedSame, .OrderedDescending:
                 message = "请在设备的\"设置-隐私-相机\"中允许访问相机。"
-                alertActionController.addAction(UIAlertAction(title: "确定", style: UIAlertActionStyle.Cancel, handler: nil))
-            case .OrderedAscending:
-                // Do Nothing
-                message = "请设置允许访问相机。"
                 alertActionController.addAction(UIAlertAction(title: "取消", style: .Cancel, handler: nil))
                 alertActionController.addAction(UIAlertAction(title: "确定", style: .Default, handler: { _ -> Void in
                     UIApplication.sharedApplication().openURL(NSURL(string: UIApplicationOpenSettingsURLString)!)
                 }))
+            case .OrderedAscending:
+                // Do Nothing
+                message = "请设置允许访问相机。"
+                alertActionController.addAction(UIAlertAction(title: "确定", style: UIAlertActionStyle.Cancel, handler: nil))
             }
             
             alertActionController.message = message
