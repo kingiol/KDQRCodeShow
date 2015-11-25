@@ -69,7 +69,9 @@ extension QRCodeViewController: AVCaptureMetadataOutputObjectsDelegate {
         var stringValue = ""
         if metadataObjects.count > 0 {
             let metaDataObject = metadataObjects[0] as! AVMetadataMachineReadableCodeObject
-            stringValue = metaDataObject.stringValue
+            if metaDataObject.type == AVMetadataObjectTypeQRCode {
+                stringValue = metaDataObject.stringValue
+            }
         }
         
         if stringValue.characters.count > 0 {
